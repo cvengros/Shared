@@ -10,7 +10,7 @@ $.ajax({
 		dataType: 'html',
         success: function(resp) {
 			document.getElementById("myBookmarklet").href=resp.replace(/\\\r/g,"");
-        }, error: function(resp) {alert(resp.responseText);}
+        }, error: function(resp) {'ERROR: '+alert(resp.responseText);}
     });
 </script>
 </head>
