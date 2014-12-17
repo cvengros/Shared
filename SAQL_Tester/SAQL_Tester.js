@@ -84,8 +84,11 @@ SAQLTesterMyDiv.style.margin = "5px 5px 0 5px";
 
 SAQLTesterMyDiv.innerHTML = '\
 <span style="font-size:22px;">Salesforce Analytics Cloud SAQL Tester</span>\
-<span style="font-style:italic;font-size:12px;margin-left:10px;">v0.2</span>\
-<span style="margin-left:10px;font-size:12px;">contributed by <a href="http://mycervello.com" target="_blank">Cervello</a></span>\
+<span style="margin-left:5px;font-style:italic;font-size:12px;">v0.2</span>\
+<span style="margin-left:5px;">-</span>\
+<span style="margin-left:5px;font-size:14px;">contributed by <a href="http://mycervello.com" target="_blank">Cervello</a></span>\
+<span style="margin-left:5px;">-</span>\
+<span style="margin-left:5px;font-size:14px;">latest build on <a href="https://github.com/Cervello/Shared/tree/master/SAQL_Tester" target="_blank">Github</a></span>\
 <a href="javascript:void(0);" style="float:right;" onclick="SAQLTesterCleanUp()">hide</a></br>\
 <table style="border-collapse:collapse;width:100%;">\
 <tr>\
@@ -101,12 +104,12 @@ Output:</br><div id="SAQLTesterMyOutput" style="border:1px solid blue;height:200
 </tr>\
 <tr>\
 <td colspan="3">\
-<span id="SAQLTesterMyHelp" style="display:none;">ex: q = load \\"0Fbf00000004E4eCAE/0Fcf00000004DGPCA2\\"; q = group q by (\'Fiscal_Qtr\',\'Fiscal_Year\'); q = foreach q generate \'Fiscal_Qtr\' as \'Fiscal_Qtr\',\'Fiscal_Year\' as \'Fiscal_Year\',sum(\'Booking\') as \'sum_Booking\',count() as \'count\'; q = limit q 2000;\
+<span id="SAQLTesterMyHelp" style="display:none;">ex: q = load \\"0Fbf00000004E4eCAE/0Fcf00000004DGPCA2\\"; q = filter q by \'Account_Name\' in [\\"Nobeltec\\", \\"Norsteel\\"]; q = group q by (\'Fiscal_Qtr\',\'Fiscal_Year\'); q = foreach q generate \'Fiscal_Qtr\' as \'Fiscal_Qtr\',\'Fiscal_Year\' as \'Fiscal_Year\',sum(\'Booking\') as \'sum_Booking\',count() as \'count\'; q = limit q 2000;\
 </br></br>Tips:<ul><li>The above example will not work for your org. It is provided for syntax help only.</li>\
 <li>It is recommended that you use browser developer tools (F12) to get a query to start with. Look in the response to the "remote" POST.</li>\
 <li>You may escape double-quotes, but it is not necessary here. However, you must escape double-quotes when you use this in the "pigql" tag of your dashboard JSON.</li>\
 <li>You may use newlines here. However, you can not use newlines in the "pigql" tag of your dashboard JSON.</li>\
-<li>Dataset names will not work here. You must use the fully-qualified "Id/Version" identifier.</li>\
+<li>Dataset names will not work here. You must use the fully-qualified "id/version" identifier.</li>\
 </ul>\
 </span>\
 </td>\
