@@ -31,6 +31,11 @@ Tips:
 - You may use newlines here. However, you can not use newlines in the "pigql" tag of your dashboard JSON.
 - Dataset names will not work here. You must use the fully-qualified "id/version" identifier.
 
+Build notes
+-----------
+
+Javascript minified by [JSCompress.com](http://jscompress.com/), with `javascript:` prepended and `;` appended.
+
 About
 -----
 
