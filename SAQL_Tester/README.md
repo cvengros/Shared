@@ -1,14 +1,12 @@
 Salesforce Analytics Cloud SAQL Tester
 ======================================
 
-This bookmarklet will allow you to run and debug Salesforce Analytics Cloud SAQL statements quickly and easily.
+This bookmarklet allows you to run and debug Salesforce Analytics Cloud SAQL statements quickly and easily.
 
 Installation
 ------------
 
-To install:
-
-    View Source of file SAQL_Tester.js and copy the contents into the location field of a bookmark
+To install this bookmarklet, copy the source of file [SAQL_Tester.js](https://github.com/Cervello/Shared/blob/master/SAQL_Tester/SAQL_Tester.js) and paste the contents into the location field of a bookmark.
 
 Usage
 -----
