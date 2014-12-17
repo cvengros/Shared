@@ -89,7 +89,8 @@ SAQLTesterMyDiv.innerHTML = '\
 <table style="border-collapse:collapse;width:100%;">\
 <tr>\
 <td style="width:200px;">\
-Input:<a href="javascript:void(0);" style="cursor:pointer;float:right;" onclick="SAQLTesterToggleHelp()">?</a></br><textarea id="SAQLTesterMyInput" cols="80" rows="10" style="border:1px solid green;resize:none;height:200px;max-height:200px;"></textarea>\
+Input:<a href="https://github.com/Cervello/Shared/blob/master/SAQL_Tester/README.md#input-help" target="_blank" style="float:right;">?</a></br>\
+<textarea id="SAQLTesterMyInput" cols="80" rows="10" style="border:1px solid green;resize:none;height:200px;max-height:200px;"></textarea>\
 </td>\
 <td style="width:10px;bottom:0px;">\
 <button id="SAQLTesterMyButton" onclick="SAQLTesterSendQuery()">Send</button>\
