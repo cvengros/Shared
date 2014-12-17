@@ -22,6 +22,7 @@ Input Help
 ----------
 
 Example input:
+
 `q = load \"0Fbf00000004E4eCAE/0Fcf00000004DGPCA2\"; q = filter q by 'Account_Name' in [\"Nobeltec\", \"Norsteel\"]; q = group q by ('Fiscal_Qtr','Fiscal_Year'); q = foreach q generate 'Fiscal_Qtr' as 'Fiscal_Qtr','Fiscal_Year' as 'Fiscal_Year',sum('Booking') as 'sum_Booking',count() as 'count'; q = limit q 2000;`
 
 Tips:
