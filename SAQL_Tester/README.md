@@ -3,6 +3,11 @@ Salesforce Analytics Cloud SAQL Tester
 
 This bookmarklet allows you to run and debug Salesforce Analytics Cloud SAQL statements quickly and easily.
 
+Current Version
+---------------
+
+v0.2
+
 Installation
 ------------
 
