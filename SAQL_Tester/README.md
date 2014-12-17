@@ -6,7 +6,7 @@ This bookmarklet allows you to run and debug Salesforce Analytics Cloud SAQL sta
 Current Version
 ---------------
 
-v0.2
+v0.2 (2014-12-17)
 
 Installation
 ------------
