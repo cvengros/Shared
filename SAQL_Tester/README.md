@@ -16,4 +16,4 @@ To use this bookmarklet, log in to Salesforce Analytics Cloud. From any Analytic
 About
 -----
 
-This bookmarklet was created by Marc Hassan (mhassan AT mycervello.com) of Cervello, Inc, December 2014. Feel free to share and/or fork!
+This bookmarklet was created by Marc Hassan (mhassan AT mycervello.com) of Cervello Inc, December 2014. Feel free to share and/or fork!
