@@ -6,7 +6,7 @@
 $.ajax({
         type: 'get',
         cache: false,
-        url: 'https://raw.githubusercontent.com/Cervello/Shared/master/SAQL_Tester/SAQL_Tester_min.js',
+        url: 'https://rawgit.com/Cervello/Shared/master/SAQL_Tester/SAQL_Tester_min.js',
 		dataType: 'html',
         success: function(resp) {
 			document.getElementById("myBookmarklet").href=resp.replace(/\\\r/g,"");
