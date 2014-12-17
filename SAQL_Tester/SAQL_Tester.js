@@ -18,10 +18,6 @@ SAQLTesterMyJS.innerHTML=' \
 	  function SAQLTesterCleanUp() { \
 		  document.getElementById("SAQLTesterMyDiv").style.display="none"; \
 		  } \
-	  function SAQLTesterToggleHelp() { \
-		  SAQLTesterMyHelp = document.getElementById("SAQLTesterMyHelp"); \
-		  if(SAQLTesterMyHelp.style.display=="none"){SAQLTesterMyHelp.style.display="";} else {SAQLTesterMyHelp.style.display="none";}; \
-		  } \
       function SAQLTesterBuildQuery() { \
 	      return JSON.stringify({"action":"query","query":document.getElementById("SAQLTesterMyInput").value.replace(/\\\\\\"/g,"\\"")}); \
 		  } \
@@ -100,18 +96,6 @@ Input:<a href="javascript:void(0);" style="cursor:pointer;float:right;" onclick=
 </td>\
 <td style="padding:5px;">\
 Output:</br><div id="SAQLTesterMyOutput" style="border:1px solid blue;height:200px;max-height:200px;overflow:auto;"></div>\
-</td>\
-</tr>\
-<tr>\
-<td colspan="3">\
-<span id="SAQLTesterMyHelp" style="display:none;">ex: q = load \\"0Fbf00000004E4eCAE/0Fcf00000004DGPCA2\\"; q = filter q by \'Account_Name\' in [\\"Nobeltec\\", \\"Norsteel\\"]; q = group q by (\'Fiscal_Qtr\',\'Fiscal_Year\'); q = foreach q generate \'Fiscal_Qtr\' as \'Fiscal_Qtr\',\'Fiscal_Year\' as \'Fiscal_Year\',sum(\'Booking\') as \'sum_Booking\',count() as \'count\'; q = limit q 2000;\
-</br></br>Tips:<ul><li>The above example will not work for your org. It is provided for syntax help only.</li>\
-<li>It is recommended that you use browser developer tools (F12) to get a query to start with. Look in the response to the "remote" POST.</li>\
-<li>You may escape double-quotes, but it is not necessary here. However, you must escape double-quotes when you use this in the "pigql" tag of your dashboard JSON.</li>\
-<li>You may use newlines here. However, you can not use newlines in the "pigql" tag of your dashboard JSON.</li>\
-<li>Dataset names will not work here. You must use the fully-qualified "id/version" identifier.</li>\
-</ul>\
-</span>\
 </td>\
 </tr>\
 </table>\
