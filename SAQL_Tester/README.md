@@ -35,7 +35,7 @@ Tips:
 Build notes
 -----------
 
-Javascript minified by [JSCompress.com](http://jscompress.com/), with `javascript:` prepended and `;` appended.
+Javascript minified by [JSCompress.com](http://jscompress.com/), with `javascript:` prepended and `;` appended. For IE support, total length of minified bookmarklet must be under 5120 chars.
 
 About
 -----
