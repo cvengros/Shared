@@ -9,7 +9,8 @@ $.ajax({
         url: 'https://rawgit.com/Cervello/Shared/master/SAQL_Tester/SAQL_Tester_min.js',
 		dataType: 'html',
         success: function(resp) {
-			document.getElementById("myBookmarklet").href=resp.replace(/\\\r/g,"");
+        	/* .replace added for IE */
+		document.getElementById("myBookmarklet").href=resp.replace(/\\\r/g,"");
         }, error: function(resp) {'ERROR: '+alert(resp.responseText);}
     });
 </script>
