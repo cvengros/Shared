@@ -11,7 +11,7 @@ v0.2 (2014-12-17)
 Installation
 ------------
 
-To install this bookmarklet, copy the source of file [SAQL_Tester.js](https://github.com/Cervello/Shared/blob/master/SAQL_Tester/SAQL_Tester.js) and paste the contents into the location field of a bookmark.
+Click [here](https://cervello.github.io/Shared/SAQL_Tester.html) for installation instructions. To install this bookmarklet from source, copy the source of file [SAQL_Tester_min.js](https://github.com/Cervello/Shared/blob/master/SAQL_Tester/SAQL_Tester_min.js) and paste the contents into the location field of a bookmark.
 
 Usage
 -----
