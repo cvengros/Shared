@@ -2,7 +2,7 @@ javascript:(function(){
 /* Salesforce Analytics Cloud SAQL Tester v0.2 */
 /* https://github.com/Cervello/Shared/blob/master/SAQL_Tester */
 
-if (window.location.toString().indexOf("salesforce.com/analytics")==-1){alert("You must be inside Salesforce Analytics Cloud to use this bookmarklet.");return;}
+if (window.location.toString().indexOf("salesforce.com"+(window.location.port ? ":"+window.location.port : "")+"/analytics")==-1){alert("You must be inside Salesforce Analytics Cloud to use this bookmarklet.");return;}
 
 var STMyJS = document.getElementById("STMyJS");
 var STMyDiv = document.getElementById("STMyDiv");
@@ -24,7 +24,7 @@ function STBuildQuery() { \
 function STSendQuery() { \
   var STDataString = STBuildQuery(); \
   $.ajax({ \
-    url: window.location.protocol+\'//\'+window.location.hostname+\'/insights/internal_api/v1.0/remote\', \
+    url: \'/insights/internal_api/v1.0/remote\', \
     type: \'POST\', \
     data: STDataString, \
     dataType: \'json\', \
@@ -52,11 +52,11 @@ function STSendQuery() { \
   }); \
 } \
 function STSetHeader(xhr) { \
-  xhr.setRequestHeader(\'Host\',window.location.hostname); \
+  xhr.setRequestHeader(\'Host\',window.location.hostname+(window.location.port ? \':\'+window.location.port: \'\')); \
   xhr.setRequestHeader(\'Accept\',\'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\'); \
   xhr.setRequestHeader(\'Accept-Language\',\'en-US,en;q=0.5\'); \
   xhr.setRequestHeader(\'Authorization\',\'OAuth \'+STGetCookie("sid")); \
-  xhr.setRequestHeader(\'Referer\',window.location.protocol+\'//\'+window.location.hostname+\'/analytics/wave/wave.apexp\'); \
+  xhr.setRequestHeader(\'Referer\',window.location.protocol+\'//\'+window.location.hostname+(window.location.port ? \':\'+window.location.port: \'\')+\'/analytics/wave/wave.apexp\'); \
   xhr.setRequestHeader(\'Content-Length\',STBuildQuery().length); \
   xhr.setRequestHeader(\'Content-Type\',\'text/plain; charset=UTF-8\'); \
   xhr.setRequestHeader(\'Connection\',\'keep-alive\'); \
